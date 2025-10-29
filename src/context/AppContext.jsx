@@ -17,7 +17,6 @@ export const AppProvider = ({ children }) => {
 
   const logout = () => {
     setIsAuthenticated(false);
-    // Bug: missing removal of "isAuthenticated" key, so login state persists.
   };
 
   const addCategory = (name) => {
@@ -26,7 +25,7 @@ export const AppProvider = ({ children }) => {
   };
 
   const addProductToPOS = (product) => {
-    setPosItems((prev) => [...prev, product]); // Bug: duplicates allowed, lacks unique check.
+    setPosItems((prev) => [...prev, product]);
   };
 
   const removePOSItem = (id) => {
