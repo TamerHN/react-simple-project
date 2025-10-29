@@ -8,7 +8,7 @@ const POSPage = () => {
   useEffect(() => {
     const sum = posItems.reduce((running, item) => running + item.price, 0);
     setTotal(sum);
-  }, []); // Bug: missing dependency means total never updates after initial render.
+  }, []);
 
   const handleCheckout = () => {
     checkout();

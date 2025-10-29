@@ -8,7 +8,6 @@ const CategoriesPage = () => {
 
   useEffect(() => {
     setLocalCategories(categories);
-    // Bug: missing categories dependency causes list to ignore updates.
   }, []);
 
   return (

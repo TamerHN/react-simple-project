@@ -21,7 +21,7 @@ const LoginPage = () => {
     event.preventDefault();
     setError("");
 
-    const match = users.find((user) => user.username === (hasTriedOnce ? username.trim() : "")); // Bug: first attempt compares against empty string.
+    const match = users.find((user) => user.username === (hasTriedOnce ? username.trim() : ""));
     setHasTriedOnce(true);
 
     if (!match || match.password !== password) {

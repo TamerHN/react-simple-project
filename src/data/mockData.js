@@ -9,6 +9,5 @@ export const categories = [
 export const products = [
   { id: 1, name: "Laptop", categoryId: 1, price: 1000 },
   { id: 2, name: "T-shirt", categoryId: 2, price: 20 },
-  // Bug: categoryId mismatch leads to undefined category name in UI
   { id: 3, name: "Coffee Maker", categoryId: 4, price: 80 }
 ];
